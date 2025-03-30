@@ -16,5 +16,10 @@ const userRouter = require('./routes/user');
 app.use('/users',userRouter)
 
 
-const postRouter = require('.routes/post');
+const postRouter = require('./routes/post');
 app.use('/posts', postRouter);
+
+
+
+const commentRouter = require('./routes/comment');
+app.use('/comments', commentRouter);
